@@ -1,0 +1,109 @@
+Agent Pushover 1.0.0 — offline test report
+Date: 2026-09-28
+Environment: Linux x86_64, Python 3.13.5, SQLite 3.46.1
+Command: python3 -m unittest discover -s tests -v
+Transport: mocked; no real Pushover delivery or live coding-agent session tested.
+
+test_back_to_back_turns_not_deduped (test_engine.EngineTests.test_back_to_back_turns_not_deduped) ... ok
+test_codex_idle_waits (test_engine.EngineTests.test_codex_idle_waits) ... ok
+test_codex_new_prompt_cancels_idle (test_engine.EngineTests.test_codex_new_prompt_cancels_idle) ... ok
+test_codex_tool_continuation_cancels_idle (test_engine.EngineTests.test_codex_tool_continuation_cancels_idle) ... ok
+test_complete_disabled_idle_still_scheduled (test_engine.EngineTests.test_complete_disabled_idle_still_scheduled) ... ok
+test_config_failure_is_passive (test_engine.EngineTests.test_config_failure_is_passive) ... ok
+test_disabled_trigger_not_enqueued (test_engine.EngineTests.test_disabled_trigger_not_enqueued) ... ok
+test_duplicate_pending_permission (test_engine.EngineTests.test_duplicate_pending_permission) ... ok
+test_error_cancels_idle (test_engine.EngineTests.test_error_cancels_idle) ... ok
+test_exit_cancels_idle (test_engine.EngineTests.test_exit_cancels_idle) ... ok
+test_hook_invalid_input_no_decision (test_engine.EngineTests.test_hook_invalid_input_no_decision) ... ok
+test_independent_error_details (test_engine.EngineTests.test_independent_error_details) ... ok
+test_json_mode_uses_stream_completion_only (test_engine.EngineTests.test_json_mode_uses_stream_completion_only) ... ok
+test_no_raw_detail_in_queue_or_log (test_engine.EngineTests.test_no_raw_detail_in_queue_or_log) ... ok
+test_parallel_identical_events (test_engine.EngineTests.test_parallel_identical_events) ... ok
+test_permanent_error_not_retried (test_engine.EngineTests.test_permanent_error_not_retried) ... ok
+test_private_files (test_engine.EngineTests.test_private_files) ... ok
+test_queue_survives_reopen (test_engine.EngineTests.test_queue_survives_reopen) ... ok
+test_queued_then_delivered (test_engine.EngineTests.test_queued_then_delivered) ... ok
+test_recently_sent_dedup (test_engine.EngineTests.test_recently_sent_dedup) ... ok
+test_retry_budget_exhausted (test_engine.EngineTests.test_retry_budget_exhausted) ... ok
+test_retry_then_success (test_engine.EngineTests.test_retry_then_success) ... ok
+test_stale_messages_expire (test_engine.EngineTests.test_stale_messages_expire) ... ok
+test_toggle_cancels_already_pending_job (test_engine.EngineTests.test_toggle_cancels_already_pending_job) ... ok
+test_uninstalled_is_noop (test_engine.EngineTests.test_uninstalled_is_noop) ... ok
+test_wrapper_input_cancels_idle (test_engine.EngineTests.test_wrapper_input_cancels_idle) ... ok
+test_auth_and_unknown_api_errors (test_events.EventTests.test_auth_and_unknown_api_errors) ... ok
+test_cross_session_dedupe_isolation (test_events.EventTests.test_cross_session_dedupe_isolation) ... ok
+test_default_privacy (test_events.EventTests.test_default_privacy) ... ok
+test_details_and_pushover_size_limits (test_events.EventTests.test_details_and_pushover_size_limits) ... ok
+test_exit_codes_detected (test_events.EventTests.test_exit_codes_detected) ... ok
+test_failure_hook (test_events.EventTests.test_failure_hook) ... ok
+test_ignore_unsupported_event (test_events.EventTests.test_ignore_unsupported_event) ... ok
+test_interrupt_ignored (test_events.EventTests.test_interrupt_ignored) ... ok
+test_invalid_config_types (test_events.EventTests.test_invalid_config_types) ... ok
+test_legacy_notify_argument (test_events.EventTests.test_legacy_notify_argument) ... ok
+test_mcp_rate_limit (test_events.EventTests.test_mcp_rate_limit) ... ok
+test_no_emergency_priority (test_events.EventTests.test_no_emergency_priority) ... ok
+test_notification_types (test_events.EventTests.test_notification_types) ... ok
+test_overloaded_not_rate_limit (test_events.EventTests.test_overloaded_not_rate_limit) ... ok
+test_permission_denied (test_events.EventTests.test_permission_denied) ... ok
+test_permission_duplicate_normalization (test_events.EventTests.test_permission_duplicate_normalization) ... ok
+test_permission_payload_does_not_become_error (test_events.EventTests.test_permission_payload_does_not_become_error) ... ok
+test_plan_and_elicitation (test_events.EventTests.test_plan_and_elicitation) ... ok
+test_priorities (test_events.EventTests.test_priorities) ... ok
+test_question_tools (test_events.EventTests.test_question_tools) ... ok
+test_rate_limit_structured (test_events.EventTests.test_rate_limit_structured) ... ok
+test_redaction (test_events.EventTests.test_redaction) ... ok
+test_stop_both_platforms (test_events.EventTests.test_stop_both_platforms) ... ok
+test_stop_is_not_semantic_success_detector (test_events.EventTests.test_stop_is_not_semantic_success_detector) ... ok
+test_subagent_stop_not_main_completion (test_events.EventTests.test_subagent_stop_not_main_completion) ... ok
+test_successful_read_is_not_scanned (test_events.EventTests.test_successful_read_is_not_scanned) ... ok
+test_unknown_notification_explicit_error (test_events.EventTests.test_unknown_notification_explicit_error) ... ok
+test_usage_limits (test_events.EventTests.test_usage_limits) ... ok
+test_disabled_codex_hooks_not_overridden (test_install.InstallerIntegrationTests.test_disabled_codex_hooks_not_overridden) ... ok
+test_env_only_does_not_persist_credentials (test_install.InstallerIntegrationTests.test_env_only_does_not_persist_credentials) ... ok
+test_existing_codex_notify_preserved_byte_for_byte (test_install.InstallerIntegrationTests.test_existing_codex_notify_preserved_byte_for_byte) ... ok
+test_invalid_json_aborts_without_replacing_settings (test_install.InstallerIntegrationTests.test_invalid_json_aborts_without_replacing_settings) ... ok
+test_one_command_installs_and_uninstalls_both_with_spaces (test_install.InstallerIntegrationTests.test_one_command_installs_and_uninstalls_both_with_spaces) ... ok
+test_reinstall_and_later_user_edits_preserved_on_uninstall (test_install.InstallerIntegrationTests.test_reinstall_and_later_user_edits_preserved_on_uninstall) ... ok
+test_single_platform_install (test_install.InstallerIntegrationTests.test_single_platform_install) ... ok
+test_symlink_config_never_replaced (test_install.InstallerIntegrationTests.test_symlink_config_never_replaced) ... ok
+test_unowned_binary_never_overwritten (test_install.InstallerIntegrationTests.test_unowned_binary_never_overwritten) ... ok
+test_codex_never_receives_claude_only_events (test_install.MergeTests.test_codex_never_receives_claude_only_events) ... ok
+test_idempotent_hook_merge (test_install.MergeTests.test_idempotent_hook_merge) ... ok
+test_invalid_hooks_rejected (test_install.MergeTests.test_invalid_hooks_rejected) ... ok
+test_merge_keeps_other_settings (test_install.MergeTests.test_merge_keeps_other_settings) ... ok
+test_uninstall_preserves_shared_matcher_group (test_install.MergeTests.test_uninstall_preserves_shared_matcher_group) ... ok
+test_endpoint_cannot_be_replaced (test_pushover.ClientTests.test_endpoint_cannot_be_replaced) ... ok
+test_http_429_not_retried (test_pushover.ClientTests.test_http_429_not_retried) ... ok
+test_http_500_retried (test_pushover.ClientTests.test_http_500_retried) ... ok
+test_network_error_is_sanitized_and_retryable (test_pushover.ClientTests.test_network_error_is_sanitized_and_retryable) ... ok
+test_no_redirects (test_pushover.ClientTests.test_no_redirects) ... ok
+test_post_fields_and_utf8 (test_pushover.ClientTests.test_post_fields_and_utf8) ... ok
+test_status_zero_not_success (test_pushover.ClientTests.test_status_zero_not_success) ... ok
+test_validation_endpoint (test_pushover.ClientTests.test_validation_endpoint) ... ok
+test_buffer_is_bounded (test_stream.ObserverTests.test_buffer_is_bounded) ... ok
+test_custom_patterns (test_stream.ObserverTests.test_custom_patterns) ... ok
+test_error_and_idle (test_stream.ObserverTests.test_error_and_idle) ... ok
+test_json_memory_bound_and_recovers (test_stream.ObserverTests.test_json_memory_bound_and_recovers) ... ok
+test_json_stream_complete_and_failure (test_stream.ObserverTests.test_json_stream_complete_and_failure) ... ok
+test_json_success_text_not_error (test_stream.ObserverTests.test_json_success_text_not_error) ... ok
+test_json_tool_failure (test_stream.ObserverTests.test_json_tool_failure) ... ok
+test_json_truncated_record_not_classified_until_eof (test_stream.ObserverTests.test_json_truncated_record_not_classified_until_eof) ... ok
+test_json_unknown_and_malformed (test_stream.ObserverTests.test_json_unknown_and_malformed) ... ok
+test_no_newline_error_flush (test_stream.ObserverTests.test_no_newline_error_flush) ... ok
+test_osc_payloads_are_not_scanned (test_stream.ObserverTests.test_osc_payloads_are_not_scanned) ... ok
+test_partial_errors_are_coalesced (test_stream.ObserverTests.test_partial_errors_are_coalesced) ... ok
+test_rate_limit_with_ansi_chunk_boundaries (test_stream.ObserverTests.test_rate_limit_with_ansi_chunk_boundaries) ... ok
+test_repeated_frame_dedup (test_stream.ObserverTests.test_repeated_frame_dedup) ... ok
+test_same_error_can_be_reported_again_after_redraw_window (test_stream.ObserverTests.test_same_error_can_be_reported_again_after_redraw_window) ... ok
+test_silence_is_not_idle (test_stream.ObserverTests.test_silence_is_not_idle) ... ok
+test_success_description_not_error (test_stream.ObserverTests.test_success_description_not_error) ... ok
+test_terminal_config_disabled (test_stream.ObserverTests.test_terminal_config_disabled) ... ok
+test_unicode_split (test_stream.ObserverTests.test_unicode_split) ... ok
+test_pipes_preserve_stdout_stderr_and_exit_status (test_stream.ProcessTests.test_pipes_preserve_stdout_stderr_and_exit_status) ... ok
+test_pty_input_resize_and_terminal_restoration (test_stream.ProcessTests.test_pty_input_resize_and_terminal_restoration) ... ok
+test_real_detached_workers_deliver_concurrent_hooks_once (test_worker_process.WorkerProcessTests.test_real_detached_workers_deliver_concurrent_hooks_once) ... ok
+
+----------------------------------------------------------------------
+Ran 98 tests in 29.472s
+
+OK

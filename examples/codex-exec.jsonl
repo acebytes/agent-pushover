@@ -1,0 +1,5 @@
+{"type": "thread.started", "thread_id": "stream-example-01"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "command_execution", "command": "npm test", "exit_code": 1, "status": "failed", "aggregated_output": "One test failed."}}
+{"type": "error", "message": "Usage limit reached"}
+{"type": "turn.failed", "error": {"message": "Usage limit reached"}}

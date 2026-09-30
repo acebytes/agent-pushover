@@ -1,0 +1,7 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "StopFailure",
+  "error": "rate_limit",
+  "error_details": "Usage limit reached. Review the session for reset information."
+}

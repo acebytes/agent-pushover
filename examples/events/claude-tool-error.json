@@ -1,0 +1,11 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PostToolUseFailure",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "npm test"
+  },
+  "error": "Process exited with code 1: one test failed.",
+  "is_interrupt": false
+}

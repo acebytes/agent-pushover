@@ -1,0 +1,7 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "Notification",
+  "notification_type": "idle_prompt",
+  "message": "The session is waiting for your next input."
+}

@@ -1,0 +1,8 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PostToolUseFailure",
+  "tool_name": "Bash",
+  "error": "Interrupted by the user.",
+  "is_interrupt": true
+}

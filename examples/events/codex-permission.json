@@ -1,0 +1,11 @@
+{
+  "session_id": "codex-example-01",
+  "turn_id": "turn-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PermissionRequest",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "npm test",
+    "description": "Run the test suite"
+  }
+}

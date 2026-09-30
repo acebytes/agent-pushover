@@ -1,0 +1,10 @@
+{
+  "type": "agent-turn-complete",
+  "thread-id": "legacy-example-01",
+  "turn-id": "turn-example-01",
+  "cwd": "/projects/example-app",
+  "input-messages": [
+    "Add one small test."
+  ],
+  "last-assistant-message": "The test is complete."
+}

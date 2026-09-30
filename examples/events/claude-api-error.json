@@ -1,0 +1,7 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "StopFailure",
+  "error": "authentication_failed",
+  "error_details": "Authentication failed. Sign in again."
+}

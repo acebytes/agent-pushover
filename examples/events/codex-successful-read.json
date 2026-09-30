@@ -1,0 +1,11 @@
+{
+  "session_id": "codex-example-01",
+  "turn_id": "turn-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "read_file",
+  "tool_response": {
+    "content": "This example demonstrates Error: rate limit reached.",
+    "success": true
+  }
+}

@@ -1,0 +1,14 @@
+Release archive verification — 2026-09-28
+
+PASS: ZIP integrity (CRC), required files, and no Python cache files.
+PASS: Extracted-archive offline installation in an isolated temporary home.
+PASS: Both hook sets installed; existing hook entries retained.
+PASS: Installed launcher dry-run classified a rate limit at priority 1.
+PASS: Installed config command changed a trigger without editing JSON manually.
+PASS: Extracted installer clean uninstall with --purge.
+PASS: Unrelated Claude/Codex hooks and byte-exact Codex config.toml preserved.
+PASS: Credentials, runtime, and unmodified launcher removed; disabled marker retained.
+PASS: 15 synthetic fixture classifications match their documentation.
+PASS: Documentation relative links and JSON fixture syntax checked.
+
+No external API call or authenticated agent session was used for these checks.

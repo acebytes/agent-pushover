@@ -1,0 +1,6 @@
+{
+  "session_id": "claude-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "Stop",
+  "last_assistant_message": "The requested test has been added."
+}

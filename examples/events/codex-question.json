@@ -1,0 +1,15 @@
+{
+  "session_id": "codex-example-01",
+  "turn_id": "turn-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "request_user_input",
+  "tool_input": {
+    "questions": [
+      {
+        "id": "migration",
+        "question": "Should the migration preserve legacy rows?"
+      }
+    ]
+  }
+}

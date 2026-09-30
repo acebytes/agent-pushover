@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "triggers": {
+    "complete": {
+      "enabled": true,
+      "priority": 0,
+      "dedupe_seconds": 5
+    },
+    "idle": {
+      "enabled": true,
+      "priority": 0,
+      "dedupe_seconds": 8
+    },
+    "rate_limit": {
+      "enabled": true,
+      "priority": 1,
+      "dedupe_seconds": 120
+    },
+    "error": {
+      "enabled": true,
+      "priority": 1,
+      "dedupe_seconds": 30
+    }
+  },
+  "privacy": {
+    "include_details": false,
+    "include_project": true,
+    "include_host": true
+  },
+  "pushover": {
+    "device": "",
+    "sound": "",
+    "timeout_seconds": 5
+  },
+  "codex": {
+    "idle_after_stop_seconds": 60
+  },
+  "terminal": {
+    "enabled": true,
+    "extra_rate_limit_patterns": [],
+    "extra_error_patterns": [],
+    "extra_idle_patterns": []
+  },
+  "delivery": {
+    "max_attempts": 3,
+    "max_pending": 500,
+    "max_age_seconds": 3600
+  }
+}

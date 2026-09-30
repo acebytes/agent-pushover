@@ -1,0 +1,37 @@
+# Python/build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Local secrets/runtime data (never commit)
+.env
+.env.*
+!.env.example
+credentials.json
+state.sqlite3*
+events.log*
+install-manifest.json
+backups/
+*.lock
+
+# Editor/OS/release artifacts
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.zip
+*.zip.sha256
+/.flow
+CLAUDE.md
+AGENTS.md
+
+# Local AI-tooling state (session logs, memory, per-machine settings; never commit)
+.remember/
+.claude/

@@ -1,0 +1,8 @@
+{
+  "session_id": "codex-example-01",
+  "turn_id": "turn-example-01",
+  "cwd": "/projects/example-app",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "Bash",
+  "tool_response": "Wall time: 0.01 seconds\nProcess exited with code 1\nOutput:\nOne test failed."
+}
